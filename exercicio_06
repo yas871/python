@@ -1,0 +1,8 @@
+# Leitura da temperatura em Celsius
+celsius = float(input("Digite a temperatura em graus Celsius: "))
+
+# Convertendo para Fahrenheit
+fahrenheit = celsius * 1.8 + 32
+
+# Exibindo o resultado
+print(f"A temperatura de {celsius}°C equivale a {fahrenheit}°F.")
