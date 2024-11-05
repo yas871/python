@@ -1,0 +1,10 @@
+# Leitura do número
+numero = float(input("Digite um número: "))
+
+# Calculando o dobro e a metade
+dobro = numero * 2
+metade = numero / 2
+
+# Exibindo os resultados
+print(f"O dobro de {numero} é {dobro}.")
+print(f"A metade de {numero} é {metade}.")
