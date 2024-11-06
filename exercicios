@@ -20,13 +20,10 @@ soma = num1 + num2
 print("A soma entre",num1,"e",num2,"e igual a",soma)
 
 5) 
-# Solicita as duas notas ao usuário
-nota1 = float(input("Nota 1: "))
-nota2 = float(input("Nota 2: "))
-# Calcula a média
-media = (nota1 + nota2) / 2
-# Exibe o resultado
-print(f"A média entre {nota1} e {nota2} é igual a {media:.1f}")
+nota1 = float(input("Digite a nota 1"))
+nota2 = float(input("Digite a nota 2"))
+media =  (nota1+nota2) / 2
+print = ("A media entre a", nota1, "e", nota2, "e igual a",media )
 
 6) 
 # Solicita um número inteiro ao usuário
