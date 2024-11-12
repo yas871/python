@@ -85,23 +85,18 @@ print(f"A área a ser pintada é {area} m².")
 print(f"A quantidade de tinta necessária é {quantidade_tinta} litros.")
 
 11)
-# Solicita os coeficientes A, B e C da equação do segundo grau
-A = float(input("Digite o valor de A: "))
-B = float(input("Digite o valor de B: "))
-C = float(input("Digite o valor de C: "))
-# Calcula o valor de Delta
-delta = (B ** 2) - (4 * A * C)
-# Exibe o resultado
-print(f"O valor de Delta é {delta}.")
+a = int(input("informe o valor de A"))
+b = int(input("informe o valor de B"))
+c = int(input("informe o valor de C"))
+delta = b ** 2 - 4 * a * c
+print("O valor do teclado = ", delta)
 
 12) 
-# Solicita o preço do produto
-preco = float(input("Digite o preço do produto: "))
-# Calcula o preço promocional com 5% de desconto
+preco = float(input("informe o preco o ptoduto"))
 desconto = preco * 0.05
-preco_promocional = preco - desconto
-# Exibe o resultado
-print(f"O preço promocional é R${preco_promocional:.2f}.")
+promocao = preco - desconto
+print("desconto", desconto)
+print("preco promocional", promocao)
 
 13) 
 # Solicita o salário do funcionário
@@ -113,15 +108,11 @@ novo_salario = salario + aumento
 print(f"O novo salário com 15% de aumento é R${novo_salario:.2f}.")
 
 14) 
-# Solicita a quantidade de Km percorridos e os dias de aluguel
-km_percorridos = float(input("Digite a quantidade de Km percorridos: "))
-dias_alugados = int(input("Digite a quantidade de dias que o carro foi alugado: "))
-# Calcula o preço total
-preco_por_dia = 90
-preco_por_km = 0.20
-custo_total = (dias_alugados * preco_por_dia) + (km_percorridos * preco_por_km)
-# Exibe o resultado
-print(f"O preço total a pagar é R${custo_total:.2f}.")
+salario = float(input("Digite o valor do salario"))
+aumento = salario * 0.15
+novo_salario = salario + aumento 
+print(f"aumento de R$ {aumento: .2f}")
+print(f"novo_salario de R$ {novo_salario: .2f}")
 
 15) 
 # Solicita o número de dias trabalhados
