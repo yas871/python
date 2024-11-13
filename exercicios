@@ -136,3 +136,53 @@ tempo_perdido = total_cigarros * minutos_perdidos_por_cigarro
 dias_perdidos = tempo_perdido / (60 * 24)
 # Exibe o resultado
 print(f"Você perderá aproximadamente {dias_perdidos:.2f} dias de vida.")
+
+
+EXPLICAÇÃO EXTRA
+
+n1 = float(input("Digite uma nota"))
+n2 = float(input("Digite uma nota"))
+media = (n1+n2) /2
+if media >= 6 :
+    print("Aprovado media, ",media)
+else :
+    print("Reprovado media",media)
+
+17)
+velocidade= float(input("informe a velocidade "))
+if velocidade >80 :
+    multa = (velocidade - 80) * 5
+    print(f"velocidade acima de 80 km - multa R$ {multa:.2f}")
+
+
+18)
+ano_atual = int(input("Digite o ano atual "))
+nascimento = int(input("Digite o ano do nascimento "))
+idade = ano_atual - nascimento
+if idade >= 16 :
+    print("pode votar sua idade e", idade, " anos ")
+else :
+        print("Nao pode votar sua idade e ",idade, "anos")
+
+20)
+num = int(input("Digite um numero"))
+resto = num % 2
+if resto == 0 :
+    print(num, "e par")
+else:
+    print(num, "e impar")
+
+21)
+ano = int(input("Digite o ano"))
+if ano % 4 == 0 and ano % 100 != 0 :
+    print("o ano", ano, "e bissexto")
+else:
+    print("o ano", ano, "nao é bissexto")
+-----------
+
+ano = int(input("Digite o ano"))
+if ano % 4 == 0 and ( ano % 100 != 0  or ano % 400 == 0) :
+    print("o ano", ano, "e bissexto")
+else:
+    print("o ano", ano, "nao é bissexto")
+
