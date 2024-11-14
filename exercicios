@@ -186,3 +186,46 @@ if ano % 4 == 0 and ( ano % 100 != 0  or ano % 400 == 0) :
 else:
     print("o ano", ano, "nao é bissexto")
 
+22)
+# Leitura do ano atual e ano de nascimento
+ano = int(input("Informe o ano atual: "))
+nascimento = int(input("Informe o ano de nascimento: "))
+idade = ano - nascimento
+if idade < 18:
+    print("Faltam", 18 - idade, "anos para você fazer o alistamento.")
+if idade == 18:
+    print("Você deve se alistar este ano.")
+else:
+    print("Você já tem", idade - 18, "anos que fez o alistamento.")
+
+23)
+nome = input("Digite seu nome")
+sexo = input("Digite o sexo (M/F) ")
+compra = float(input("Digite o valor da compra"))
+if sexo == 'f' :
+    desconto = compra * 0.13
+    val_desconto = "13%"
+else : 
+    desconto = compra * 0.05
+    val_desconto = "5%"
+total_a_pagar = compra - desconto
+print("Você teve um desconto de", val_desconto)
+print(f"O valor final a pagar R$ {total_a_pagar: .2f}")
+
+24)
+distancia = float(input("informe a distancia em km "))
+if distancia <= 200 :
+    valor_corrida = distancia * 0.50
+else:
+    valor_corrida = distancia * 0.45
+    print(f"O valor da corrida e R$ {valor_corrida:.2f}")
+
+25)
+a = int(input("Informe o valor do lado 1"))
+b = int(input("Informe o valor do lado 2"))
+c = int(input("Informe o valor do lado 3"))
+
+if a<b+c and b<a+c and c<a+b :
+    print("os valores informados formam um triangulo")
+else :
+     print("os valores informados não formam um triangulo")
