@@ -279,3 +279,75 @@ if a < b + c and b < a + c and c < a + b:
         print("ISÓSCELES")
 else:
     print("Os valores informados não formam um triângulo.")
+31)import random
+
+def jogar():
+    opcoes = ['Pedra', 'Papel', 'Tesoura']
+    
+    # Entrada do jogador
+    escolha = input("Escolha (Pedra, Papel ou Tesoura): ").strip().capitalize()
+    if escolha not in opcoes:
+        print("Opção inválida! Tente novamente.")
+        return
+
+    # Escolha do computadorm
+    computador = random.choice(opcoes)
+    print(f"\nVocê escolheu: {escolha
+
+32)
+# Online Python - IDE, Editor, Compiler, Interpreter
+
+def sum(a, b):
+    return (a + b)
+
+a = int(input('Enter 1st number: '))
+b = int(input('Enter 2nd number: '))
+
+print(f'Sum of {a} and {b} is {sum(a, b)}')
+
+33)def aprovar_emprestimo():
+    valor_casa = float(input("Digite o valor da casa: R$ "))
+    salario = float(input("Digite o seu salário: R$ "))
+    anos = int(input("Digite em quantos anos você pretende pagar: "))
+    parcelas = anos * 12
+    prestacao_mensal = valor_casa / parcelas
+    limite = salario * 0.30
+    if prestacao_mensal <= limite:
+        print(f"\nEmpréstimo aprovado! O valor da prestação mensal será R$ {prestacao_mensal:.2f}.")
+    else:
+        print(f"\nEmpréstimo negado! A prestação mensal de R$ {prestacao_mensal:.2f} excede o limite de 30% do seu salário.")
+
+aprovar_emprestimo()
+
+
+34)
+peso = float(input("Digite o seu peso em kg: "))
+altura = float(input("Digite a sua altura em metros: "))
+imc = peso / (altura ** 2)
+print(f"\nSeu IMC é: {imc:.2f}")
+if imc < 18.5:
+    print("Classificação: Abaixo do peso")
+elif 18.5 <= imc < 25:
+     print("Classificação: Peso ideal")
+elif 25 <= imc < 30:
+     print("Classificação: Sobrepeso")
+elif 30 <= imc < 40:
+    print("Classificação: Obesidade")
+else:
+    print("Classificação: Obesidade mórbida")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
