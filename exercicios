@@ -336,6 +336,130 @@ elif 30 <= imc < 40:
 else:
     print("Classificação: Obesidade mórbida")
 
+35)
+# Solicitar as informações do usuário
+tipo_carro = input("Digite o tipo de carro alugado (popular ou luxo): ").strip().lower()
+dias = int(input("Digite o número de dias de aluguel: "))
+km_percorridos = int(input("Digite o número de Km percorridos: "));
+
+# Definir as tarifas de aluguel e custo por km de acordo com o tipo de carro
+if tipo_carro == "popular":
+    aluguel_diario = 90
+    if km_percorridos <= 100:
+        custo_km = 0.20
+    else:
+        custo_km = 0.10
+elif tipo_carro == "luxo":
+    aluguel_diario = 150
+    if km_percorridos <= 200:
+        custo_km = 0.30
+    else:
+        custo_km = 0.25
+else:
+    print("Tipo de carro inválido!")
+    exit()
+
+custo_aluguel = aluguel_diario * dias
+custo_km_total = km_percorridos * custo_km
+total_a_pagar = custo_aluguel + custo_km_total
+print(f"Preço do aluguel: R$ {custo_aluguel:.2f}")
+print(f"Preço pelo Km percorrido: R$ {custo_km_total:.2f}")
+print(f"Total a pagar: R$ {total_a_pagar:.2f}")
+
+36)
+ Função para calcular pontos e dinheiro
+def calcular_pontos_e_dinheiro(horas_atividade):
+    if horas_atividade <= 10:
+        pontos = horas_atividade * 2
+    elif horas_atividade <= 20:
+        pontos = 10 * 2 + (horas_atividade - 10) * 5
+    else:
+        pontos = 10 * 2 + 10 * 5 + (horas_atividade - 20) * 10
+
+ 
+   dinheiro = pontos * 0.05
+    return pontos, dinheiro
+
+horas_atividade = float(input("Digite as horas de atividade no mês: "))
+pontos, dinheiro = calcular_pontos_e_dinheiro(horas_atividade)
+
+print(f"Você ganhou {pontos} pontos.")
+print(f"O valor em dinheiro que você conseguiu é R${dinheiro:.2f}")
+
+37)
+def calcular_novo_salario(salario, genero, anos_trabalho):
+    if genero == "feminino":
+        if anos_trabalho < 15:
+            reajuste = 0.05
+        elif 15 <= anos_trabalho <= 20:
+            reajuste = 0.12
+        else:
+            reajuste = 0.23
+    elif genero == "masculino":
+        if anos_trabalho < 20:
+            reajuste = 0.03
+        elif 20 <= anos_trabalho <= 30:
+            reajuste = 0.13
+        else:
+            reajuste = 0.25
+    else:
+        raise ValueError("Gênero inválido! Use 'feminino' ou 'masculino'.")
+
+    novo_salario = salario * (1 + reajuste)
+    return novo_salario
+
+# Leitura dos dados
+salario_atual = float(input("Digite o salário atual do funcionário: R$"))
+genero = input("Digite o gênero do funcionário (feminino/masculino): ").strip().lower()
+anos_trabalho = int(input("Digite o número de anos de trabalho na empresa: "))
+
+# Cálculo do novo salário
+novo_salario = calcular_novo_salario(salario_atual, genero, anos_trabalho)
+
+# Exibindo o novo salário
+print(f"Novo salário do funcionário: R${novo_salario:.2f}")
+
+
+38)
+#Exemplo de while no py
+cont = 0
+while cont <= 50 :
+  print(cont)
+  cont = cont + 5
+ else :
+     print("O valor de cont passou de 50 ", cont)
+//Fim do exemplo
+
+#Exercício38
+cont = 6
+while cont <= 11 :
+  print(con)
+  cont = cont + 1
+else :
+  print("Acabou")
+
+39)
+cont = 10  
+while cont >= 3:  
+    print(cont)  
+    cont = cont - 1  
+else:
+    print("Acabou!")  
+
+40)
+cont = 0
+while cont >= 18:  
+    print(cont)  
+    cont = cont + 3
+else:
+    print("Acabou!")  
+
+
+41)
+for i in range(100, -1, -5):
+    print(i, end=' ')
+print("Acabou!")
+
 
 
 
