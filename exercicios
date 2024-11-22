@@ -1,31 +1,31 @@
-1) 
+1) pág
 # Exibe a mensagem na tela
 print("Olá, Mundo!")
 
-2) 
+2) pág
 # Exibe a mensagem de boas-vindas
 nome = input("qual é o seu nome")
 print ("olá",nome,"é um prazer te conhecer") 
 
-3)
+3)pág
 # Solicita o nome e o salário do funcionário
 nome = input("Nome do Funcionário: ")
 salario = float(input("Salário"))
 print("O funcionário",nome,"tem um salário de", salario, "em Junho")
 
-4) 
+4) pág
 num1 = int (input("digite um  valor"))
 num2 = int (input("digite outro valor"))
 soma = num1 + num2
 print("A soma entre",num1,"e",num2,"e igual a",soma)
 
-5) 
+5) pág
 nota1 = float(input("Digite a nota 1"))
 nota2 = float(input("Digite a nota 2"))
 media =  (nota1+nota2) / 2
 print = ("A media entre a", nota1, "e", nota2, "e igual a",media )
 
-6) 
+6) pág
 # Solicita um número inteiro ao usuário
 numero = int(input("Digite um número: "))
 # Calcula o antecessor e o sucessor
@@ -35,7 +35,7 @@ sucessor = numero + 1
 print(f"O antecessor de {numero} é {antecessor}")
 print(f"O sucessor de {numero} é {sucessor}")
 
-7) 
+7) pág
 # Solicita um número real ao usuário
 numero = float(input("Digite um número: "))
 # Calcula o dobro e a terça parte
@@ -45,7 +45,7 @@ terca_parte = numero / 3
 print(f"O dobro de {numero} é {dobro}")
 print(f"A terça parte de {numero} é {terca_parte:.5f}")
 
-8) 
+8) pág
 # Solicita a distância em metros ao usuário
 metros = float(input("Digite uma distância em metros: "))
 # Calcula as conversões
@@ -64,7 +64,7 @@ print(f"{dm}dm")
 print(f"{cm}cm")
 print(f"{mm}mm")
 
-9) 
+9) pág
 # Solicita a quantidade de dinheiro em reais ao usuário
 reais = float(input("Quanto dinheiro você tem na carteira (em R$): "))
 # Conversão para dólares
@@ -72,7 +72,7 @@ dolares = reais / 3.45
 # Exibe o resultado
 print(f"Com R${reais:.2f}, você pode comprar US${dolares:.2f}.")
 
-10) 
+10) pág
 # Solicita a largura e a altura da parede
 largura = float(input("Digite a largura da parede (em metros): "))
 altura = float(input("Digite a altura da parede (em metros): "))
@@ -84,21 +84,21 @@ quantidade_tinta = area / 2
 print(f"A área a ser pintada é {area} m².")
 print(f"A quantidade de tinta necessária é {quantidade_tinta} litros.")
 
-11)
+11) pág
 a = int(input("informe o valor de A"))
 b = int(input("informe o valor de B"))
 c = int(input("informe o valor de C"))
 delta = b ** 2 - 4 * a * c
 print("O valor do teclado = ", delta)
 
-12) 
+12)pág
 preco = float(input("informe o preco o ptoduto"))
 desconto = preco * 0.05
 promocao = preco - desconto
 print("desconto", desconto)
 print("preco promocional", promocao)
 
-13) 
+13) pág
 # Solicita o salário do funcionário
 salario = float(input("Digite o salário do funcionário: "))
 # Calcula o novo salário com 15% de aumento
@@ -107,14 +107,14 @@ novo_salario = salario + aumento
 # Exibe o resultado
 print(f"O novo salário com 15% de aumento é R${novo_salario:.2f}.")
 
-14) 
+14) pág
 salario = float(input("Digite o valor do salario"))
 aumento = salario * 0.15
 novo_salario = salario + aumento 
 print(f"aumento de R$ {aumento: .2f}")
 print(f"novo_salario de R$ {novo_salario: .2f}")
 
-15) 
+15) pág
 # Solicita o número de dias trabalhados
 dias_trabalhados = int(input("Digite o número de dias trabalhados no mês: "))
 # Cálculo do salário
@@ -124,7 +124,7 @@ salario = dias_trabalhados * horas_por_dia * valor_por_hora
 # Exibe o resultado
 print(f"O salário do funcionário é R${salario:.2f}.")
 
-16) 
+16) pág
 # Solicita a quantidade de cigarros fumados por dia e quantos anos fumou
 cigarros_por_dia = int(input("Quantos cigarros você fuma por dia? "))
 anos_fumando = int(input("Quantos anos você fumou? "))
@@ -148,14 +148,14 @@ if media >= 6 :
 else :
     print("Reprovado media",media)
 
-17)
+17) pág
 velocidade= float(input("informe a velocidade "))
 if velocidade >80 :
     multa = (velocidade - 80) * 5
     print(f"velocidade acima de 80 km - multa R$ {multa:.2f}")
 
 
-18)
+18) pág
 ano_atual = int(input("Digite o ano atual "))
 nascimento = int(input("Digite o ano do nascimento "))
 idade = ano_atual - nascimento
@@ -164,7 +164,7 @@ if idade >= 16 :
 else :
         print("Nao pode votar sua idade e ",idade, "anos")
 
-20)
+20) pág
 num = int(input("Digite um numero"))
 resto = num % 2
 if resto == 0 :
@@ -172,7 +172,7 @@ if resto == 0 :
 else:
     print(num, "e impar")
 
-21)
+21) pág
 ano = int(input("Digite o ano"))
 if ano % 4 == 0 and ano % 100 != 0 :
     print("o ano", ano, "e bissexto")
@@ -186,7 +186,7 @@ if ano % 4 == 0 and ( ano % 100 != 0  or ano % 400 == 0) :
 else:
     print("o ano", ano, "nao é bissexto")
 
-22)
+22) pág
 # Leitura do ano atual e ano de nascimento
 ano = int(input("Informe o ano atual: "))
 nascimento = int(input("Informe o ano de nascimento: "))
@@ -460,6 +460,50 @@ for i in range(100, -1, -5):
     print(i, end=' ')
 print("Acabou!")
 
+42)
+numero = int(input("Digite um numero interiro positivo"))
+contador = 1
+    while (contador <= numero):
+     print(contador)
+    contador = contador + 1
+print("acabou")
+
+43)
+for i in range(30, 0, -1):
+    if i % 4 == 0:
+        print(f"[{i}]", end=" ")
+    else:
+        print(i, end=" ")
+
+
+44)
+inicio = int(input("Digite o primeiro Valor: "))
+fim = int(input("Digite o último Valor: "))
+incremento = int(input("Digite o incremento: "))
+if incremento > 0:
+    print("Contagem:", end=" ")
+    for i in range(inicio, fim + 1, incremento):
+        print(i, end=" ")
+    print("Acabou!")
+else:
+    print("O incremento deve ser um valor positivo.")
+
+
+45)
+
+
+
+
+
+
+48)
+soma = 0
+contador = 1
+while contador <= 7:
+    numero = int(input(f"Digite o {contador}º número: "))  
+    soma += numero  
+    contador += 1  
+print(f"A soma dos números é: {soma}")
 
 
 
