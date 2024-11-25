@@ -198,7 +198,7 @@ if idade == 18:
 else:
     print("Você já tem", idade - 18, "anos que fez o alistamento.")
 
-23)
+23) pág
 nome = input("Digite seu nome")
 sexo = input("Digite o sexo (M/F) ")
 compra = float(input("Digite o valor da compra"))
@@ -212,7 +212,7 @@ total_a_pagar = compra - desconto
 print("Você teve um desconto de", val_desconto)
 print(f"O valor final a pagar R$ {total_a_pagar: .2f}")
 
-24)
+24) pág
 distancia = float(input("informe a distancia em km "))
 if distancia <= 200 :
     valor_corrida = distancia * 0.50
@@ -220,7 +220,7 @@ else:
     valor_corrida = distancia * 0.45
     print(f"O valor da corrida e R$ {valor_corrida:.2f}")
 
-25)
+25) pág
 a = int(input("Informe o valor do lado 1"))
 b = int(input("Informe o valor do lado 2"))
 c = int(input("Informe o valor do lado 3"))
@@ -230,7 +230,7 @@ if a<b+c and b<a+c and c<a+b :
 else :
      print("os valores informados não formam um triangulo")
 
-26)
+26) pág
 n1 = int(input("Digite um numero"))
 n2 = int(input("Digite outro numero"))
 
@@ -241,7 +241,7 @@ elif n2 > n1 :
 else :
      print("Não existe valor maior, os dois são iguais")
 
-27)
+27) pág
 n1 = float(input("Digite a 1ª nota"))
 n2 = float(input("Digite a 2ª nota"))
 media = (n1 + n2) /2
@@ -252,7 +252,7 @@ elif media >= 7 :
 else :
     print("Recuperação com media", media)
 
-28)
+28) pág
 largura = float(input("Informe a largura do terreno: "))
 comprimento = float(input("Informe o comprimento do terreno: "))
 area = largura * comprimento
@@ -264,7 +264,7 @@ elif 100 <= area <= 500:
 else:
     print("A área do terreno é", area,"m. Terreno VIP.")
 
-30)
+30) pág
 a = int(input("Informe o valor do lado 1: "))
 b = int(input("Informe o valor do lado 2: "))
 c = int(input("Informe o valor do lado 3: "))
@@ -294,7 +294,7 @@ def jogar():
     computador = random.choice(opcoes)
     print(f"\nVocê escolheu: {escolha
 
-32)
+32) pág
 # Online Python - IDE, Editor, Compiler, Interpreter
 
 def sum(a, b):
@@ -305,7 +305,8 @@ b = int(input('Enter 2nd number: '))
 
 print(f'Sum of {a} and {b} is {sum(a, b)}')
 
-33)def aprovar_emprestimo():
+33) pág
+def aprovar_emprestimo():
     valor_casa = float(input("Digite o valor da casa: R$ "))
     salario = float(input("Digite o seu salário: R$ "))
     anos = int(input("Digite em quantos anos você pretende pagar: "))
@@ -320,7 +321,7 @@ print(f'Sum of {a} and {b} is {sum(a, b)}')
 aprovar_emprestimo()
 
 
-34)
+34) pág
 peso = float(input("Digite o seu peso em kg: "))
 altura = float(input("Digite a sua altura em metros: "))
 imc = peso / (altura ** 2)
@@ -336,7 +337,7 @@ elif 30 <= imc < 40:
 else:
     print("Classificação: Obesidade mórbida")
 
-35)
+35) pág
 # Solicitar as informações do usuário
 tipo_carro = input("Digite o tipo de carro alugado (popular ou luxo): ").strip().lower()
 dias = int(input("Digite o número de dias de aluguel: "))
@@ -366,7 +367,7 @@ print(f"Preço do aluguel: R$ {custo_aluguel:.2f}")
 print(f"Preço pelo Km percorrido: R$ {custo_km_total:.2f}")
 print(f"Total a pagar: R$ {total_a_pagar:.2f}")
 
-36)
+36) pág
  Função para calcular pontos e dinheiro
 def calcular_pontos_e_dinheiro(horas_atividade):
     if horas_atividade <= 10:
@@ -386,7 +387,7 @@ pontos, dinheiro = calcular_pontos_e_dinheiro(horas_atividade)
 print(f"Você ganhou {pontos} pontos.")
 print(f"O valor em dinheiro que você conseguiu é R${dinheiro:.2f}")
 
-37)
+37) pág
 def calcular_novo_salario(salario, genero, anos_trabalho):
     if genero == "feminino":
         if anos_trabalho < 15:
@@ -420,7 +421,7 @@ novo_salario = calcular_novo_salario(salario_atual, genero, anos_trabalho)
 print(f"Novo salário do funcionário: R${novo_salario:.2f}")
 
 
-38)
+38) pág
 #Exemplo de while no py
 cont = 0
 while cont <= 50 :
@@ -438,7 +439,7 @@ while cont <= 11 :
 else :
   print("Acabou")
 
-39)
+39) pág
 cont = 10  
 while cont >= 3:  
     print(cont)  
@@ -446,7 +447,7 @@ while cont >= 3:
 else:
     print("Acabou!")  
 
-40)
+40) pág
 cont = 0
 while cont >= 18:  
     print(cont)  
@@ -455,12 +456,12 @@ else:
     print("Acabou!")  
 
 
-41)
+41) pág
 for i in range(100, -1, -5):
     print(i, end=' ')
 print("Acabou!")
 
-42)
+42) pág
 numero = int(input("Digite um numero interiro positivo"))
 contador = 1
     while (contador <= numero):
@@ -468,7 +469,7 @@ contador = 1
     contador = contador + 1
 print("acabou")
 
-43)
+43) pág
 for i in range(30, 0, -1):
     if i % 4 == 0:
         print(f"[{i}]", end=" ")
@@ -476,7 +477,7 @@ for i in range(30, 0, -1):
         print(i, end=" ")
 
 
-44)
+44) pág
 inicio = int(input("Digite o primeiro Valor: "))
 fim = int(input("Digite o último Valor: "))
 incremento = int(input("Digite o incremento: "))
@@ -489,14 +490,47 @@ else:
     print("O incremento deve ser um valor positivo.")
 
 
-45)
+45) pág
+primeiro_valor = int(input("digite o primeito valor"))
+ultimo_valor = int(input("digite o ultimo valor"))
+incremento = int(input("digite um encremento"))
 
 
+if primeiro_valor > ultimo_valor :
+   auxiliar = primeiro_valor
+   primeiro_valor = ultimo_valor
+   ultimo_valor = auxiliar
+   
+while primeiro_valor <= ultimo_valor:
+    print(primeiro_valor, end="")
+    primeiro_valor = primeiro_valor + incremento 
+print("Acabou!")
+
+46) pág
+cont = 6
+soma = 0
+
+while cont <= 100 :
+        soma = soma + cont
+        cont = cont + 2
+        
+print("Soma é igual ", soma)
+
+47) pág
+primeiro_termo = 500
+razao = -50
+ultimo_termo = 0
+soma = 0
+termo_atual = primeiro_termo
+
+while termo_atual >= ultimo_termo:
+    soma = soma + termo_atual  
+    termo_atual = termo_atual + razao 
+
+print("Soma é igual:", soma)
 
 
-
-
-48)
+48) pág
 soma = 0
 contador = 1
 while contador <= 7:
@@ -505,6 +539,19 @@ while contador <= 7:
     contador += 1  
 print(f"A soma dos números é: {soma}")
 
+49)
+pares = 0
+impares = 0
+contador = 0
+while contador < 6:
+    numero = int(input("Digite um número"))
+    if numero % 2 == 0:
+        pares += 1  
+    else:
+        impares += 1  
+    contador += 1
+print("Quantidade de números pares:", pares)
+print("Quantidade de números ímpares:", impares)
 
 
 
