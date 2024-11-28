@@ -553,7 +553,7 @@ while contador < 6:
 print("Quantidade de números pares:", pares)
 print("Quantidade de números ímpares:", impares)
 
-atividade 
+ATIVIDADE 1
 def adivinhar_numero():
     numero_sorteado = random.randint(1, 100)
     
@@ -585,7 +585,57 @@ def adivinhar_numero():
 
 adivinhar_numero()
 
+ATIVIDADE 2
 
+# Inicializando as variáveis de votos
+votos_a = 0  # Votos para o Candidato A
+votos_b = 0  # Votos para o Candidato B
+votos_c = 0  # Votos para o Candidato C
+votos_d = 0  # Votos para o Candidato D
+votos_brancos = 0  # Votos em branco
+votos_nulos = 0  # Votos nulos
+total_votantes = 0  # Contador de pessoas que votaram
+
+# Laço de votação
+while True:
+    voto = int(input("Digite seu voto (1 - Candidato A, 2 - Candidato B, 3 - Candidato C, 4 - Candidato D, 5 - Voto em branco): "))
+    
+    # Contabiliza os votos de acordo com a opção escolhida
+    if voto == 1:
+        votos_a += 1
+    elif voto == 2:
+        votos_b += 1
+    elif voto == 3:
+        votos_c += 1
+    elif voto == 4:
+        votos_d += 1
+    elif voto == 5:
+        votos_brancos += 1
+    else:
+        votos_nulos += 1
+    
+    # Incrementa o total de votantes
+    total_votantes += 1
+    
+    # Pergunta se deseja votar novamente
+    resposta = input("Deseja votar novamente? (S/N): ").strip().upper()
+    if resposta == 'N':
+        break
+
+# Exibindo os resultados finais
+print("\nResultado da votação:")
+print(f"Total de pessoas que votaram: {total_votantes}")
+print(f"Votos para o Candidato A: {votos_a}")
+print(f"Votos para o Candidato B: {votos_b}")
+print(f"Votos para o Candidato C: {votos_c}")
+print(f"Votos para o Candidato D: {votos_d}")
+print(f"Votos em branco: {votos_brancos}")
+print(f"Votos nulos: {votos_nulos}")
+
+# Determinando o vencedor
+votos = {'Candidato A': votos_a, 'Candidato B': votos_b, 'Candidato C': votos_c, 'Candidato D': votos_d}
+vencedor = max(votos, key=votos.get)
+print(f"\nO candidato vencedor foi: {vencedor}")
 
 
 
