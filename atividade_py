@@ -115,3 +115,87 @@ for cont in range (1,4) :
     soma= soma + num
     
 print("soma dos numeros", soma)
+
+exercicios pedra/papel/tesoura
+import random
+jogo=["PEDRA", "PAPEL", "TESOURA"]
+meu_pontos = 0
+computador_pontos = 0
+while True:
+    print("Escolha uma das opções (Pedra / papel / tesoura) ")
+    opcao = input("Escolha uma das opções ").upper()
+    computador = random.choice(jogo)
+    if opcao == computador :
+        print("Empate ")
+        print("Você escolheu ", opcao)
+        print("Computador escolheu ",computador)
+        
+    elif opcao == "PEDRA" :
+        if computador == "TESOURA" :
+            meu_pontos = meu_pontos + 1
+            print("Você ganhou ")
+            print("Você escolheu", opcao)
+            print("Computador escolheu", computador)
+        else :
+            computador_pontos = computador_pontos + 1
+            print("Computador ganhou ")
+            print("Você escolheu", opcao)
+            print("Computador escolheu", computador_pontos)
+            
+    elif opcao == "TESOURA" :
+        if computador == "PAPEL" :
+            meu_pontos = meus_pontos + 1
+            print("Você ganhou ")    
+            print("Você escolheu", opcao)
+            print("Computador escolheu", computador)
+        else :
+            computador_pontos = computador_pontos + 1
+            print("Você ganhou ")
+            print("Você escolheu", opcao)
+            print("Computador escolheu", computador)
+    elif opcao == "PAPEL" :
+        if computador == "PEDRA" :
+            print("computador ganhou")
+            print("Voce escolheu",opcao)
+            print("Computador escolheu",computador)
+    elif opcao == "TESOURA" :
+        if computador == "PAPEL" :
+            meus_pontos = meus_pontos + 1
+            print("Voce ganhou")
+            print("Voce escolheu", opcao)
+            print("Computador escolheu", computador)
+        else :
+            computador_pontos = computador_pontos + 1
+            print("Computador ganhou")
+            print("Voce escolheu", opcao)
+            print("Computador escolheu", computador)
+            
+    elif opcao == "PAPEL" :
+        if computador == "PEDRA":
+            meus_pontos = meus_pontos + 1
+            print("Voce ganhou")
+            print("Voce escolheu", opcao)
+            print("Computador escolheu",computador)
+        else :
+            computador_pontos = computador_pontos + 1
+            print("Computador ganhou")
+            print("Voce escolheu", opcao)
+            print("Computador escolheu", computador)
+            
+    resposta = input("Deseja jogar novamente (S/N) ?").upper()
+    if resposta != "S" :
+        break
+    
+print("Resultado final")
+print("Meus pontos.........",meus_pontos, "Pontos")
+print("Computador pontos......",computador_pontos, "Pontos")
+            
+
+exercicio 02
+numero = int(input("Digite um número: "))
+
+contador = 1
+while contador <= 10:
+    print(f"{numero} * {contador} = {numero * contador}")
+    contador += 1
+
